@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Économie & Analyse Quantitative</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+    <!-- En-tête / Navigation -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md shadow-sm border-b border-slate-100">
+        <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="text-xl font-bold tracking-tight text-blue-900">
+                <span class="text-blue-600">Portfolio</span> .
+            </a>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium text-slate-600">
+                <a href="#about" class="hover:text-blue-600 transition">À propos</a>
+                <a href="#skills" class="hover:text-blue-600 transition">Compétences</a>
+                <a href="#projects" class="hover:text-blue-600 transition">Projets</a>
+                <a href="#education" class="hover:text-blue-600 transition">Formation</a>
+                <a href="#contact" class="hover:text-blue-600 transition">Contact</a>
+            </nav>
+            <a href="#contact" class="hidden sm:inline-flex items-center justify-center px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition shadow-sm">
+                Me contacter
+            </a>
+        </div>
+    </header>
+
+    <!-- Section Héro / Accueil -->
+    <section class="py-20 md:py-32 bg-gradient-to-b from-white to-slate-100 border-b border-slate-200/60">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 text-blue-700 text-xs font-semibold mb-6 tracking-wide uppercase">
+                <i class="fa-solid fa-chart-line"></i> Économiste Quantitatif & Analyste de Données
+            </div>
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-slate-900 tracking-tight mb-6">
+                Transformer les données en <span class="text-blue-600">décisions publiques</span>
+            </h1>
+            <p class="text-lg md:text-xl text-slate-600 mb-10 max-w-2xl mx-auto leading-relaxed">
+                Spécialisé en évaluation des politiques publiques, modélisation économétrique et analyse statistique avancée (Stata, R, Power BI).
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#projects" class="px-6 py-3 rounded-xl bg-blue-600 text-white font-medium hover:bg-blue-700 transition shadow-md shadow-blue-600/20">
+                    Voir mes projets
+                </a>
+                <a href="#contact" class="px-6 py-3 rounded-xl bg-white border border-slate-300 text-slate-700 font-medium hover:bg-slate-50 transition">
+                    Me contacter
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section À propos -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-slate-900 tracking-tight">À propos de moi</h2>
+                <div class="w-12 h-1 bg-blue-600 mx-auto mt-3 rounded-full"></div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-4 text-slate-600 leading-relaxed">
+                    <p>
+                        Actuellement en Master spécialisé en <strong>évaluation des politiques publiques et statistiques d'impact</strong>, je combine rigueur méthodologique et maîtrise des outils quantitatifs pour analyser les enjeux socio-économiques.
+                    </p>
+                    <p>
+                        Mon parcours académique (notamment à l'UCAD / FASEG à Dakar) m'a permis de développer une solide expertise en économétrie et en gestion de projets de développement.
+                    </p>
+                    <p>
+                        J'interviens sur l'ensemble de la chaîne de valeur de la donnée : du nettoyage et de la structuration de microdonnées complexes jusqu'à la modélisation statistique et la conception de tableaux de bord décisionnels.
+                    </p>
+                </div>
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-100 shadow-sm space-y-4">
+                    <h3 class="font-bold text-slate-900 text-lg flex items-center gap-2">
+                        <i class="fa-solid fa-user-graduate text-blue-600"></i> Points clés
+                    </h3>
+                    <ul class="space-y-3 text-sm text-slate-600">
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-check text-blue-600 mt-1"></i>
+                            <span><strong>Localisation :</strong> Dakar, Sénégal</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-check text-blue-600 mt-1"></i>
+                            <span><strong>Domaine :</strong> Économie du développement & Économétrie</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-check text-blue-600 mt-1"></i>
+                            <span><strong>Stack technique :</strong> Stata, R, Power BI, Excel</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Compétences -->
+    <section id="skills" class="py-20 bg-slate-50 border-t border-b border-slate-200/60">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-slate-900 tracking-tight">Compétences Techniques</h2>
+                <div class="w-12 h-1 bg-blue-600 mx-auto mt-3 rounded-full"></div>
+            </div>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Carte 1 -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-calculator"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-900 text-lg mb-2">Économétrie & Stats</h3>
+                    <p class="text-sm text-slate-600">Modélisation économétrique, estimations Logit, nettoyage rigoureux de bases de données sous <strong>Stata</strong> et scripts d'analyse sous <strong>R / RStudio</strong>.</p>
+                </div>
+                <!-- Carte 2 -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-chart-pie"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-900 text-lg mb-2">Data Viz & BI</h3>
+                    <p class="text-sm text-slate-600">Conception de tableaux de bord interactifs, transformation de données avec <strong>Power Query</strong> et calculs de mesures avancées en <strong>DAX</strong> sur <strong>Power BI</strong>.</p>
+                </div>
+                <!-- Carte 3 -->
+                <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition">
+                    <div class="w-12 h-12 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center text-xl mb-4">
+                        <i class="fa-solid fa-file-excel"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-900 text-lg mb-2">Gestion & Traitement</h3>
+                    <p class="text-sm text-slate-600">Structuration de datasets complexes, tableaux croisés dynamiques et préparation amont des données sous <strong>Microsoft Excel</strong>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Projets -->
+    <section id="projects" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-slate-900 tracking-tight">Projets & Réalisations</h2>
+                <div class="w-12 h-1 bg-blue-600 mx-auto mt-3 rounded-full"></div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Projet 1 -->
+                <div class="bg-slate-50 rounded-2xl border border-slate-200/80 p-8 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-xs font-semibold px-3 py-1 rounded-full bg-blue-100 text-blue-800">Stata & Microdonnées</span>
+                            <i class="fa-solid fa-folder-open text-slate-400"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3">Analyse et Modélisation de l'Emploi</h3>
+                        <p class="text-slate-600 text-sm mb-6 leading-relaxed">
+                            Traitement et exploitation de données d'enquêtes nationales sur l'emploi. Application de modèles économétriques pour identifier les déterminants clés de l'insertion professionnelle et formalisation de rapports d'analyse.
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 text-xs font-medium text-slate-600">
+                        <span class="bg-white px-3 py-1 rounded-md border border-slate-200">Stata</span>
+                        <span class="bg-white px-3 py-1 rounded-md border border-slate-200">Data Cleaning</span>
+                        <span class="bg-white px-3 py-1 rounded-md border border-slate-200">Économétrie</span>
+                    </div>
+                </div>
+                <!-- Projet 2 -->
+                <div class="bg-slate-50 rounded-2xl border border-slate-200/80 p-8 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-xs font-semibold px-3 py-1 rounded-full bg-blue-100 text-blue-800">Power BI & DAX</span>
+                            <i class="fa-solid fa-folder-open text-slate-400"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3">Dashboard de Politiques Publiques & Performance</h3>
+                        <p class="text-slate-600 text-sm mb-6 leading-relaxed">
+                            Création d'un tableau de bord décisionnel interactif pour le suivi d'indicateurs de performance académique et institutionnelle. Modélisation relationnelle et automatisation via Power Query.
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 text-xs font-medium text-slate-600">
+                        <span class="bg-white px-3 py-1 rounded-md border border-slate-200">Power BI</span>
+                        <span class="bg-white px-3 py-1 rounded-md border border-slate-200">DAX</span>
+                        <span class="bg-white px-3 py-1 rounded-md border border-slate-200">Power Query</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Formation -->
+    <section id="education" class="py-20 bg-slate-50 border-t border-b border-slate-200/60">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-slate-900 tracking-tight">Parcours Académique</h2>
+                <div class="w-12 h-1 bg-blue-600 mx-auto mt-3 rounded-full"></div>
+            </div>
+            <div class="space-y-8">
+                <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm relative pl-8 border-l-4 border-l-blue-600">
+                    <span class="text-xs font-semibold text-blue-600 uppercase tracking-wider">Formation Actuelle</span>
+                    <h3 class="text-lg font-bold text-slate-900 mt-1">Master en Évaluation des Politiques Publiques & Statistiques d'Impact</h3>
+                    <p class="text-slate-600 text-sm mt-1">Spécialisation en méthodes d'évaluation quantitative, économétrie avancée et analyse de données socio-économiques.</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm relative pl-8 border-l-4 border-l-slate-400">
+                    <span class="text-xs font-semibold text-slate-500 uppercase tracking-wider">Diplôme Universitaire</span>
+                    <h3 class="text-lg font-bold text-slate-900 mt-1">Licence en Sciences Économiques</h3>
+                    <p class="text-slate-600 text-sm mt-1">Université Cheikh Anta Diop (UCAD) / FASEG, Dakar — Solides bases en économie du développement, macroéconomie et gestion de projets.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold text-slate-900 tracking-tight mb-4">Parlons de vos projets</h2>
+            <p class="text-slate-600 mb-8 max-w-xl mx-auto">
+                Vous souhaitez collaborer sur un projet de recherche, une étude d'impact ou discuter d'opportunités en analyse de données ? N'hésitez pas à me contacter.
+            </p>
+            <div class="inline-flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="mailto:votre.email@example.com" class="px-6 py-3 rounded-xl bg-blue-600 text-white font-medium hover:bg-blue-700 transition shadow-md shadow-blue-600/20 flex items-center gap-2">
+                    <i class="fa-solid fa-envelope"></i> Envoyer un email
+                </a>
+                <a href="https://linkedin.com" target="_blank" class="px-6 py-3 rounded-xl bg-white border border-slate-300 text-slate-700 font-medium hover:bg-slate-50 transition flex items-center gap-2">
+                    <i class="fa-brands fa-linkedin text-blue-600"></i> Profil LinkedIn
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pied de page -->
+    <footer class="py-8 bg-slate-900 text-slate-400 text-sm text-center border-t border-slate-800">
+        <p>© 2026 — Conçu pour l'analyse économique et l'impact quantitatif à Dakar.</p>
+    </footer>
+
+</body>
+</html>
